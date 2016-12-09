@@ -34,9 +34,13 @@ The script for this project is in the file run_analysis.R.
 
 The code book, which contains details on the script code is in the file CodeBook.md.
 
-The layout of the project is as follows:
+The layout of the project script is as follows:
 
 All of the data is read in and stored.  Then, 2 tables are built: one for the test phase and one for the training phase.  The tables are built by first adding the data column headers to the data, binding the subject and activity to the data, and adding headers for these 2 columns.  Then the 2 tables, test and train, are combined.  
+
 Next, only data corresponding to the mean and standard deviation are kept.  This is done by looking for column names containing mean() or std().
+
 Column names are made more readable, and activity labels are used to replace numbers, again making the data set more readable.
-Finally, a tidy data set is created, calculating the average of each variable for each activity and each subject.  The resulting tidy data set is written to a file.
+Finally, a tidy data set is created, calculating the average of each variable for each activity and each subject.  
+
+The resulting tidy data set is written to a file.
